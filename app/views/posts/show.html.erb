@@ -11,7 +11,7 @@ Comments: <br>
 <br>
   <% @post.comments.each do |comment| %>
     <%= comment.user.username %>
-    says: <%= comment.content %>
+    says: <br><%= comment.content %>
   <% end %>
 
   <% @user_uniq.each do |user| %>
