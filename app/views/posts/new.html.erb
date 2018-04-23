@@ -2,13 +2,16 @@
   <%= f.label "Title: " %>
   <%= f.text_field :title %>
   <br>
+  <br>
   <%= f.label "Content: " %>
   <%= f.text_area :content %>
 
   <br>
-  
+  <br>
+
   <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>
   <%= f.fields_for :categories, @post.categories.build do |categories_fields| %>
+  <br>
   <br>
     <%= f.label "Name: " %>
     <%= categories_fields.text_field :name %>
