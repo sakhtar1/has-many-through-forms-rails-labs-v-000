@@ -1,6 +1,12 @@
 <h2>Title: <%= @post.title %></h2>
 <p>Content: <%= @post.content %></p>
 
+Categories:<br />
+  <% @post.categories.each do |c| %>
+    <%= c.name %>
+  <% end %>
+
+
 
 Comments:
   <% @post.comments.each do |comment| %>
