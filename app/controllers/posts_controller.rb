@@ -9,13 +9,14 @@ class PostsController < ApplicationController
   end
 
   def new
-    raise params.inspect
+
     @post = Post.new
     @post.categories.build
     @post.categories.build
   end
 
   def create
+    raise params.inspect
     @post = Post.create(post_params)
     redirect_to post_path(@post)
   end
