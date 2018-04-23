@@ -17,7 +17,8 @@ Comments:
     <%= link_to user.username, user_path(user) %>
   <% end %>
 
-
+  <br>
+  <br>
   <%= form_for @post.comments.build do |f| %>
   <%= f.label "Content" %>
   <%= f.text_field :content %>
