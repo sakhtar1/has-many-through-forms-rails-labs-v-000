@@ -29,10 +29,7 @@ Comments:
   <%= f.hidden_field :post_id %>
   <br>
   <br>
-  <%= f.fields_for :user, @post.comments.last.build_user do |user_fields| %>
-  <%= f.label "Username" %>
-  <%= user_fields.text_field :username %>
-  <% end %>
+
 
   <%= f.submit %>
   <% end %>
