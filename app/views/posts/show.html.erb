@@ -7,7 +7,7 @@ Categories:<br/>
   <% end %></ul>
 
 
-Comments <br>:
+Comments: <br>
   <% @post.comments.each do |comment| %>
     <%= comment.user.username %>
     says: <%= comment.content %>
